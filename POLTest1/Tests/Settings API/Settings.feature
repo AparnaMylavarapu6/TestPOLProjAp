@@ -5,7 +5,7 @@ Scenario: To Verify the GET request of Settings API using SettingsID
 
 	Given Provided with the valid SettingsID.
 	| SettingsID |
-	| 289     |
+	| 1520     |
 	When I send a GET request to fetch settings details.
 	 Then The valid settings details should be displayed.
 	
@@ -14,7 +14,7 @@ Scenario: To Verify the Delete request of Settings API using SettingsID
 
 	Given Provided with the valid SettingsID to be deleted.
 	| SettingsID |
-	| 2     |
+	| 1631     |
 	When I send a DELETE request to Delete settings details.
 	Then The settings details should be deleted.
 	
@@ -22,10 +22,10 @@ Scenario: To Verify the Delete request of Settings API using SettingsID
 Scenario: To Verify the POST request of Settings API
 	Given I have provided Entity Settings details.
 	| EntityId | EntityType | EntityText     | Address			| city   | state | zip   | UserId | ModifiedById |
-	| 601244   | 1			| BlueStone Lofts | 101 Summit St     | Duluth | CA    | 55803 |   -1   | 0       |
+	| 605499   | 1			| Southern Elms | 4519 E 31st  Street     | Tulsa | OK    | 74135	|	   0  | 0       |
 	And Provided with the new SettingsInfo details.
 	| settingsID | settingType | settingValue   |
-	| 283		 | HO4         | true |
+	| 260		 | HO4         | true |
 	When I send a POST request to add new settings
 	Then The valid settings details should be saved.
 
@@ -36,7 +36,7 @@ Scenario: To Verify the PUT request of Settings API
 	| 601234   | 1			| BlueStone Lofts | 101 Summit St   | Duluth | CA	| 55803 |   -1   | 0       |
 	And Provided with the new SettingsInfo details for PUT.
 	| settingsID | settingType | settingValue   |
-	| 291		 | POL         | false |
+	| 291		 | POL         | true |
 	When I send a PUT request to update new settings
 	Then The valid settings details should be updated.
 
@@ -45,8 +45,8 @@ Scenario: To Verify the GET request of Settings API using EntityID and EntityTyp
 
 	Given Provided with the valid EntityID and EntityType.
 	| EntityID | EntityType |
-	| 609249  |  Property  |
-	| 611489  |  Company  |
+	| 9277  |  Property  |
+	#| 611489  |  Company  |
 	When I send a GET request to fetch settings details EntityID and EntityType.
 	Then The valid settings details should be displayed based on EntityID and EntityType.
 
@@ -55,7 +55,7 @@ Scenario: To Verify the GET request of Settings API using PropertyID and Propert
 
 	Given Provided with the valid PropertyID and PropertyType.
 	| PropertyID | PropertyType |
-	| 611489  |  LeasingDesk  |
+	| 609769  |  LeasingDesk  |
 	| 2913444  |  Onesite  |
 	| 6717648  |  Yardi  |
 	When I send a GET request to fetch settings details PropertyID and PropertyType.

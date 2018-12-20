@@ -70,12 +70,12 @@ namespace POLTest1.Tests.PolicyAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table60.AddRow(new string[] {
+            table61.AddRow(new string[] {
                         "123456"});
 #line 6
- testRunner.Given("I have provided the policy id to fetch Policy Product Options", ((string)(null)), table60, "Given ");
+ testRunner.Given("I have provided the policy id to fetch Policy Product Options", ((string)(null)), table61, "Given ");
 #line 10
  testRunner.When("I send a Get request to fetch the product options", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
@@ -94,12 +94,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 14
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table61.AddRow(new string[] {
+            table62.AddRow(new string[] {
                         "123456"});
 #line 15
- testRunner.Given("I have provided the policy id to delete Policy Product Options", ((string)(null)), table61, "Given ");
+ testRunner.Given("I have provided the policy id to delete Policy Product Options", ((string)(null)), table62, "Given ");
 #line 19
  testRunner.When("I send a Delete request to delete the product options", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 20
@@ -116,62 +116,6 @@ this.ScenarioSetup(scenarioInfo);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Post Policy Product Options", new string[] {
                         "needtoupdate"});
 #line 23
-this.ScenarioSetup(scenarioInfo);
-#line hidden
-            TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
-                        "policyid",
-                        "paoid",
-                        "effdate",
-                        "expdate",
-                        "noOfIncrements"});
-            table62.AddRow(new string[] {
-                        "1234",
-                        "0",
-                        "",
-                        "",
-                        "0"});
-            table62.AddRow(new string[] {
-                        "1234",
-                        "1",
-                        "",
-                        "",
-                        "0"});
-            table62.AddRow(new string[] {
-                        "1234",
-                        "2",
-                        "",
-                        "",
-                        "0"});
-            table62.AddRow(new string[] {
-                        "3456",
-                        "0",
-                        "",
-                        "",
-                        "0"});
-            table62.AddRow(new string[] {
-                        "3456",
-                        "1",
-                        "",
-                        "",
-                        "0"});
-#line 24
- testRunner.Given("I have provided the Product Options List to post the product options", ((string)(null)), table62, "Given ");
-#line 33
- testRunner.When("I send a Post request with the product options list and the policy id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 34
- testRunner.Then("A successful response code should be generated with the product option informatio" +
-                    "n successfully posted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("Put Policy Product Options", new string[] {
-                "needtoupdate"}, SourceLine=36)]
-        public virtual void PutPolicyProductOptions()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put Policy Product Options", new string[] {
-                        "needtoupdate"});
-#line 37
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
@@ -210,8 +154,64 @@ this.ScenarioSetup(scenarioInfo);
                         "",
                         "",
                         "0"});
+#line 24
+ testRunner.Given("I have provided the Product Options List to post the product options", ((string)(null)), table63, "Given ");
+#line 33
+ testRunner.When("I send a Post request with the product options list and the policy id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 34
+ testRunner.Then("A successful response code should be generated with the product option informatio" +
+                    "n successfully posted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Put Policy Product Options", new string[] {
+                "needtoupdate"}, SourceLine=36)]
+        public virtual void PutPolicyProductOptions()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put Policy Product Options", new string[] {
+                        "needtoupdate"});
+#line 37
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
+                        "policyid",
+                        "paoid",
+                        "effdate",
+                        "expdate",
+                        "noOfIncrements"});
+            table64.AddRow(new string[] {
+                        "1234",
+                        "0",
+                        "",
+                        "",
+                        "0"});
+            table64.AddRow(new string[] {
+                        "1234",
+                        "1",
+                        "",
+                        "",
+                        "0"});
+            table64.AddRow(new string[] {
+                        "1234",
+                        "2",
+                        "",
+                        "",
+                        "0"});
+            table64.AddRow(new string[] {
+                        "3456",
+                        "0",
+                        "",
+                        "",
+                        "0"});
+            table64.AddRow(new string[] {
+                        "3456",
+                        "1",
+                        "",
+                        "",
+                        "0"});
 #line 38
- testRunner.Given("I have provided the Product Options List to insert or update the product options", ((string)(null)), table63, "Given ");
+ testRunner.Given("I have provided the Product Options List to insert or update the product options", ((string)(null)), table64, "Given ");
 #line 46
  testRunner.When("I send a Put request with the product options list and the policy id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 47

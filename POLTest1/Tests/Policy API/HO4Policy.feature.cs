@@ -70,12 +70,12 @@ namespace POLTest1.Tests.PolicyAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table46.AddRow(new string[] {
+            table47.AddRow(new string[] {
                         ""});
 #line 7
-testRunner.Given("I have provided a policyid to fetch the policy details", ((string)(null)), table46, "Given ");
+testRunner.Given("I have provided a policyid to fetch the policy details", ((string)(null)), table47, "Given ");
 #line 11
 testRunner.When("I send a Get request to the web API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
@@ -93,12 +93,12 @@ testRunner.Then("The policy information should be fetched successfully", ((strin
 #line 16
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table47.AddRow(new string[] {
+            table48.AddRow(new string[] {
                         ""});
 #line 18
-testRunner.Given("I have provided a valid policyid to delete the policy details", ((string)(null)), table47, "Given ");
+testRunner.Given("I have provided a valid policyid to delete the policy details", ((string)(null)), table48, "Given ");
 #line 22
 testRunner.When("I send a valid Delete request with the policyid to the web API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 23
@@ -114,49 +114,6 @@ testRunner.Then("The policy information should be removed successfully", ((strin
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Post Policy Information", new string[] {
                         "needtorunfordev"});
 #line 28
-this.ScenarioSetup(scenarioInfo);
-#line hidden
-            TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
-                        "policyId",
-                        "quoteId",
-                        "policyNumber",
-                        "policySource",
-                        "policyStatus",
-                        "effectiveDate",
-                        "expiryDate",
-                        "createdById",
-                        "modifiedBy",
-                        "carrier",
-                        "productID"});
-            table48.AddRow(new string[] {
-                        "0",
-                        "123546",
-                        "0236265244",
-                        "1",
-                        "1",
-                        "2018-06-25T16:25:43.0017085-05:00",
-                        "2019-06-25T16:25:43.0017099-05:00",
-                        "0",
-                        "2",
-                        "AMIG",
-                        "104"});
-#line 30
-testRunner.Given("I have provided the policy details to post the information", ((string)(null)), table48, "Given ");
-#line 35
-testRunner.When("I send a valid Post Request to the Web API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 36
-testRunner.Then("The policy information should be posted successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("Put Policy Information", new string[] {
-                "needtorunfordev"}, SourceLine=40)]
-        public virtual void PutPolicyInformation()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put Policy Information", new string[] {
-                        "needtorunfordev"});
-#line 41
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
@@ -183,8 +140,51 @@ this.ScenarioSetup(scenarioInfo);
                         "2",
                         "AMIG",
                         "104"});
+#line 30
+testRunner.Given("I have provided the policy details to post the information", ((string)(null)), table49, "Given ");
+#line 35
+testRunner.When("I send a valid Post Request to the Web API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 36
+testRunner.Then("The policy information should be posted successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Put Policy Information", new string[] {
+                "needtorunfordev"}, SourceLine=40)]
+        public virtual void PutPolicyInformation()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put Policy Information", new string[] {
+                        "needtorunfordev"});
+#line 41
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+                        "policyId",
+                        "quoteId",
+                        "policyNumber",
+                        "policySource",
+                        "policyStatus",
+                        "effectiveDate",
+                        "expiryDate",
+                        "createdById",
+                        "modifiedBy",
+                        "carrier",
+                        "productID"});
+            table50.AddRow(new string[] {
+                        "0",
+                        "123546",
+                        "0236265244",
+                        "1",
+                        "1",
+                        "2018-06-25T16:25:43.0017085-05:00",
+                        "2019-06-25T16:25:43.0017099-05:00",
+                        "0",
+                        "2",
+                        "AMIG",
+                        "104"});
 #line 43
-testRunner.Given("I have provided the policy details to update the policy information", ((string)(null)), table49, "Given ");
+testRunner.Given("I have provided the policy details to update the policy information", ((string)(null)), table50, "Given ");
 #line 48
 testRunner.When("I send a valid Put Request to the Web API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 49

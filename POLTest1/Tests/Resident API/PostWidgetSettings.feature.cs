@@ -70,18 +70,18 @@ namespace POLTest1.Tests.ResidentAPI
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table120 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table127 = new TechTalk.SpecFlow.Table(new string[] {
                         "settingsid",
                         "settingsType",
                         "settingValue"});
-            table120.AddRow(new string[] {
+            table127.AddRow(new string[] {
                         "1234",
                         "String",
                         "Ture"});
 #line 5
- testRunner.Given("I have entered the settings information", ((string)(null)), table120, "Given ");
+ testRunner.Given("I have entered the settings information", ((string)(null)), table127, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table121 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table128 = new TechTalk.SpecFlow.Table(new string[] {
                         "EntityId",
                         "EntityType",
                         "EntityText",
@@ -91,7 +91,7 @@ this.ScenarioSetup(scenarioInfo);
                         "Zip",
                         "UserId",
                         "ModifiedById"});
-            table121.AddRow(new string[] {
+            table128.AddRow(new string[] {
                         "1234",
                         "Property",
                         "Test",
@@ -102,7 +102,7 @@ this.ScenarioSetup(scenarioInfo);
                         "0",
                         "0"});
 #line 8
- testRunner.And("I have entered the Entity Settings information", ((string)(null)), table121, "And ");
+ testRunner.And("I have entered the Entity Settings information", ((string)(null)), table128, "And ");
 #line 11
  testRunner.When("I send a post request to insert the settings information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12

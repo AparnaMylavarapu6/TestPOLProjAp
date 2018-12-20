@@ -70,16 +70,16 @@ namespace POLTest1.Tests.PolicyEnrollmentAPI
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table109 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
                         "externalResidentID",
                         "unitType",
                         "unitID"});
-            table109.AddRow(new string[] {
+            table110.AddRow(new string[] {
                         "12345",
                         "External",
                         "45678"});
 #line 5
- testRunner.Given("I have entered the unit information to fetch the policy details", ((string)(null)), table109, "Given ");
+ testRunner.Given("I have entered the unit information to fetch the policy details", ((string)(null)), table110, "Given ");
 #line 9
  testRunner.When("I send a Post request to fetch the policy details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10

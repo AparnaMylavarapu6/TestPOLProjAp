@@ -74,11 +74,16 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="..\..\..\..\Documents\Visual Studio 2015\Projects\POLTest1\POLTest1\Tests\Billing API\SubmitLedgerSteps.cs">
+      <Link>Tests\Billing API\SubmitLedgerSteps.cs</Link>
+    </Compile>
     <Compile Include="Controllers\DatabaseController.cs" />
     <Compile Include="Controllers\JsonController.cs" />
     <Compile Include="Controllers\PropertiesController.cs" />
@@ -121,6 +126,11 @@
     </Compile>
     <Compile Include="Tests\Billing API\LedgerMonthlySteps.cs" />
     <Compile Include="Tests\Billing API\LedgerSteps.cs" />
+    <Compile Include="Tests\Billing API\SubmitLedger.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubmitLedger.feature</DependentUpon>
+    </Compile>
     <Compile Include="Tests\Carrier API\Carrier.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -236,12 +246,24 @@
       <DependentUpon>ThirdPartyPolicy.feature</DependentUpon>
     </Compile>
     <Compile Include="Tests\Policy Enrollment API\ThirdPartyPolicySteps.cs" />
+    <Compile Include="Tests\Resident API\Occupancy.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Occupancy.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Resident API\OccupancySteps.cs" />
     <Compile Include="Tests\Resident API\PostWidgetSettings.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PostWidgetSettings.feature</DependentUpon>
     </Compile>
     <Compile Include="Tests\Resident API\PostWidgetSettingsSteps.cs" />
+    <Compile Include="Tests\Resident API\ResidentOccupancy.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResidentOccupancy.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Tests\Resident API\ResidentOccupancySteps.cs" />
     <Compile Include="Tests\Resident API\Residents.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -289,6 +311,10 @@
     <None Include="Tests\Billing API\LedgerMonthly.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>LedgerMonthly.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tests\Billing API\SubmitLedger.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>SubmitLedger.feature.cs</LastGenOutput>
     </None>
     <None Include="Tests\Carrier API\Carrier.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -366,14 +392,23 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ThirdPartyPolicy.feature.cs</LastGenOutput>
     </None>
+    <None Include="Tests\Resident API\Occupancy.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Occupancy.feature.cs</LastGenOutput>
+    </None>
     <None Include="Tests\Resident API\PostWidgetSettings.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>PostWidgetSettings.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Tests\Resident API\ResidentOccupancy.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ResidentOccupancy.feature.cs</LastGenOutput>
     </None>
     <None Include="Tests\Resident API\Residents.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Residents.feature.cs</LastGenOutput>
     </None>
+    <None Include="Tests\Sample.runsettings" />
     <None Include="Tests\Settings API\Settings.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Settings.feature.cs</LastGenOutput>

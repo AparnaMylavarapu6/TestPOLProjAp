@@ -1,40 +1,56 @@
 ﻿Feature: Residents
+	
+
+@mytag
+Scenario: Get Resident details
+	Given I have resident details
+	| ResidentID |
+	| 8522		 |
+	When I pass the residentid for a get request
+	Then the resident details should be displayed
+
+@mytag
+Scenario: Delete Resident details
+	Given I have to Delete resident details
+	| ResidentID |
+	| 8521		 |
+	When I pass the residnet id for a delete request
+	Then the Delete resident details should be displayed
+
+@mytag
+Scenario: Post Resident details
+	Given I have to Post new resident details
+	| resType | locationID | leaseStartDate | leaseEndDate | createdDate |
+	| 1           |      1      |2018-09-14T11:29:12.862Z | 2018-09-14T11:29:12.862Z  |2018-09-14T11:29:12.862Z|
+	And I have provided Residents Information.
+	| firstName | middleName | lastName |
+	| 113       | true       | 1234     |
+	And Provided additional Resident details          |
+	| externalResID | residentID | isPrimaryResident | dateofBirth | email | mobileNumber |
+	|               |            |                   |             |       |              |
+	And I have provided Mailing Address Information.
+	| addressLine1 | addressLine2 | city | state | zipCode |
+	|              |              |      |       |         |
+	When I pass the resident id for a post request
+	Then the post resident details should be displayed
+
+@mytag
+Scenario: Put Resident details
+	Given I have to update resident details
+	| resType | locationID | leaseStartDate | leaseEndDate | createdDate |
+	| 1           |      1      |2018-09-14T11:29:12.862Z | 2018-09-14T11:29:12.862Z  |2018-09-14T11:29:12.862Z|
+	And I have provided Residents Information.
+	| firstName | middleName | lastName |
+	| 113       | true       | 1234     |
+	And Provided additional Resident details          |
+	| externalResID | residentID | isPrimaryResident | dateofBirth | email | mobileNumber |
+	|               |            |                   |             |       |              |
+	And I have provided Mailing Address Information.
+	| addressLine1 | addressLine2 | city | state | zipCode |
+	|              |              |      |       |         |
+	When I send a Put request to insert the Occupancy details
+	When I pass the resident id for a put request
+	Then the put resident details should be displayed
 
 
-@ignore
 
-Scenario: Get Resident Information
-
-Given I have a valid residentid to fetch the resident information
-| residentid |
-|            |
-When I send a valid Get Request to fetch the resident information 
-Then A valid resident information response should be generated
-
-
-@ignore
-Scenario: Delete Resident Information
-
-Given I have a valid residentid to delete the resident information
-| residentid |
-|            |
-When I send a valid Delete Request to delete the resident information
-Then A valid response for the delete operation should be generated
-
-
-@ignore
-
-Scenario: Post Resident Information
-
-Given I have the resident details for Post operation
-
-| residentType | fristName | middleName | lastName | email   | mobileNumber  | extResidentID | dateOfBirth | mailingAddressValidated |
-| LeasingDesk  | Chris     | S          | Thomas   | a@a.com | 9877666555555 | t123456       | 03/03/1980  | true                    |
-
-And  I have the mailing address details
-
-| addressLine1 | addressLine2 | city | state | postalCode |
-|              |              |      |       |            |
-
-When I Send a Post Request to the system
-Then The success response should be generated for the post operation

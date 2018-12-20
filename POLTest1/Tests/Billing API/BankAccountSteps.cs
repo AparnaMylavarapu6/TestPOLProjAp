@@ -57,6 +57,7 @@ namespace POLTest1.Tests.Billing_API
         [Given(@"I have provided the account id to fetch the bank account details")]
         public void GivenIHaveProvidedTheAccountIdToFetchTheBankAccountDetails(Table table)
         {
+            System.Console.WriteLine("Testpass1");
             fetchBankDetailsList = table.CreateSet<FetchBankDetails>().ToList();
         }
 

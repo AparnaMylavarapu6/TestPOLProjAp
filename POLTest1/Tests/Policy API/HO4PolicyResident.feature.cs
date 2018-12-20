@@ -70,12 +70,12 @@ namespace POLTest1.Tests.PolicyAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table64.AddRow(new string[] {
+            table65.AddRow(new string[] {
                         "1234"});
 #line 6
- testRunner.Given("I have entered the policy id to fetch the policy and resident information", ((string)(null)), table64, "Given ");
+ testRunner.Given("I have entered the policy id to fetch the policy and resident information", ((string)(null)), table65, "Given ");
 #line 11
  testRunner.When("I send a Get request to fetch the policy and resident information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
@@ -94,12 +94,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 15
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table65.AddRow(new string[] {
+            table66.AddRow(new string[] {
                         "1234"});
 #line 16
-testRunner.Given("I have entered the policy id to delete the policy and resident information", ((string)(null)), table65, "Given ");
+testRunner.Given("I have entered the policy id to delete the policy and resident information", ((string)(null)), table66, "Given ");
 #line 21
  testRunner.When("I send a Delete request to delete the policy and resident information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 22
@@ -118,12 +118,12 @@ testRunner.Given("I have entered the policy id to delete the policy and resident
 #line 25
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
                         "residentid"});
-            table66.AddRow(new string[] {
+            table67.AddRow(new string[] {
                         "1234"});
 #line 26
- testRunner.Given("I have entered the resident id to fetch the policy and resident information", ((string)(null)), table66, "Given ");
+ testRunner.Given("I have entered the resident id to fetch the policy and resident information", ((string)(null)), table67, "Given ");
 #line 31
  testRunner.When("I send a Get request to fetch the policy and resident information by residentid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 32
@@ -142,12 +142,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 35
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
                         "residentid"});
-            table67.AddRow(new string[] {
+            table68.AddRow(new string[] {
                         "1234"});
 #line 36
-testRunner.Given("I have entered the residentid id to delete the policy and resident information", ((string)(null)), table67, "Given ");
+testRunner.Given("I have entered the residentid id to delete the policy and resident information", ((string)(null)), table68, "Given ");
 #line 41
  testRunner.When("I send a Delete request to delete the policy and resident information by resident" +
                     "id", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

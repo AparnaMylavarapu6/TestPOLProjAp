@@ -70,12 +70,12 @@ namespace POLTest1.Tests.PolicyAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table50.AddRow(new string[] {
+            table51.AddRow(new string[] {
                         "6130581"});
 #line 6
- testRunner.Given("I have entered the policyid to fetch the policy locations", ((string)(null)), table50, "Given ");
+ testRunner.Given("I have entered the policyid to fetch the policy locations", ((string)(null)), table51, "Given ");
 #line 10
  testRunner.When("I send a Get request to getpolicylocation method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
@@ -93,12 +93,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 14
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table51.AddRow(new string[] {
+            table52.AddRow(new string[] {
                         "6130588"});
 #line 15
- testRunner.Given("I have entered the policyid to delete the policy locations", ((string)(null)), table51, "Given ");
+ testRunner.Given("I have entered the policyid to delete the policy locations", ((string)(null)), table52, "Given ");
 #line 19
  testRunner.When("I send a Delete request to deletepolicylocation method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 20
@@ -116,12 +116,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 23
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
                         "locationid"});
-            table52.AddRow(new string[] {
+            table53.AddRow(new string[] {
                         "222994"});
 #line 24
- testRunner.Given("I have entered the locationid to fetch the policy locations", ((string)(null)), table52, "Given ");
+ testRunner.Given("I have entered the locationid to fetch the policy locations", ((string)(null)), table53, "Given ");
 #line 28
  testRunner.When("I send a Get request with the locationid to fetch policies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 29
@@ -139,12 +139,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 33
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
                         "locationid"});
-            table53.AddRow(new string[] {
+            table54.AddRow(new string[] {
                         "5322151"});
 #line 34
- testRunner.Given("I have entered the locationid to delete the policy locations", ((string)(null)), table53, "Given ");
+ testRunner.Given("I have entered the locationid to delete the policy locations", ((string)(null)), table54, "Given ");
 #line 38
  testRunner.When("I send a Delete request with the locationid to delete policies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 39
@@ -162,20 +162,20 @@ this.ScenarioSetup(scenarioInfo);
 #line 42
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyId",
                         "locationID",
                         "TransferEffectiveDate",
                         "makeVaccant",
                         "active"});
-            table54.AddRow(new string[] {
+            table55.AddRow(new string[] {
                         "0",
                         "0",
                         "",
                         "true",
                         "true"});
 #line 43
-testRunner.Given("I have entered the Policy Location information", ((string)(null)), table54, "Given ");
+testRunner.Given("I have entered the Policy Location information", ((string)(null)), table55, "Given ");
 #line 47
 testRunner.When("I send a Post request to insert the policy location information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 48
@@ -193,20 +193,20 @@ testRunner.Then("The policy location information should be inserted successfully
 #line 51
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyId",
                         "locationID",
                         "TransferEffectiveDate",
                         "makeVaccant",
                         "active"});
-            table55.AddRow(new string[] {
+            table56.AddRow(new string[] {
                         "0",
                         "0",
                         "",
                         "true",
                         "true"});
 #line 52
-testRunner.Given("I have provided the Policy Location information", ((string)(null)), table55, "Given ");
+testRunner.Given("I have provided the Policy Location information", ((string)(null)), table56, "Given ");
 #line 56
 testRunner.When("I send a Put request to insert or update the policy location information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 57

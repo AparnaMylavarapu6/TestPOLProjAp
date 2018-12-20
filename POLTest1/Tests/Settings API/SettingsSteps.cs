@@ -10,22 +10,22 @@ using System.Net;
 
 namespace POLTest1.Tests.Settings_API
 {
-        public class SettingsInformation
-        {
-            public string settingsID { get; set; }
-        }
-        public class DeleteSettingsInformation
-        {
-            public string settingsID { get; set; }
-        }
-        public class SettingsInfo
-        {
-            public int settingsID { get; set; }
-            public string settingType { get; set; }
-            public bool settingValue { get; set; }
+    public class SettingsInformation
+    {
+        public string settingsID { get; set; }
+    }
+    public class DeleteSettingsInformation
+    {
+        public string settingsID { get; set; }
+    }
+    public class SettingsInfo
+    {
+        public int settingsID { get; set; }
+        public string settingType { get; set; }
+        public bool settingValue { get; set; }
 
       
-         }
+        }
     public class EntitySettingsInfo
     {
         public int EntityId { get; set; }
@@ -115,21 +115,13 @@ namespace POLTest1.Tests.Settings_API
         private List<EntityInfo> EntityInfoList = new List<EntityInfo>();
         private List<PropertyInfo> PropertyInfoList = new List<PropertyInfo>();
 
-
         private int EntityId;
         private string EntityType;
         private string propertyId;
         private string propertyType;
-        private string EntityText = "";
-        private string Address = "";
-        private string City = "";
-        private string State = "";
-        private string Zip = "";
-        private int UserId;
-        private int ModifiedById;
         public string GetsettingsID;
         public string DelsettingsID;
-        public string settingType = "";
+        public string settingType;
         public bool settingValue;
 
 
@@ -137,6 +129,7 @@ namespace POLTest1.Tests.Settings_API
         [Given(@"Provided with the valid SettingsID\.")]
         public void GivenProvidedWithTheValidSettingsID_(Table table)
         {
+            Console.WriteLine("Testpass");
             var SettingsTableList = table.CreateSet<SettingsInformation>();
             var settingsTableList = SettingsTableList.ToList();
             var count = settingsTableList.Count();
@@ -155,7 +148,7 @@ namespace POLTest1.Tests.Settings_API
             {
                 GetsettingsID = settingsIDlist[i].settingsID;
                 var jsonRequest = host + "/Widget/" + GetsettingsID;
-                jsonResponse = doExecuteApiWithHeaders(jsonRequest, "GET", "text/plain", "application/json", "Bearer " + token, "");
+                jsonResponse = doExecuteApiWithHeaders(jsonRequest, "GET", "", "text/plain", "Bearer " + token, "");
                 jsonResponseList.Add(jsonResponse);
 
             }
@@ -195,7 +188,7 @@ namespace POLTest1.Tests.Settings_API
             {
                 DelsettingsID = DeletesettingsIDlist[i].settingsID;
                 var jsonRequest = host + "/Widget/" + DelsettingsID;
-                jsonResponse = doExecuteApiWithHeaders(jsonRequest, "DELETE", "text/plain", "application/json", "Bearer " + token, "");
+                jsonResponse = doExecuteApiWithHeaders(jsonRequest, "DELETE", acceptHeader:"application/json", authHeader:"Bearer " + token,jsonPostPayload: "");
                 jsonResponseList.Add(jsonResponse);
 
             }
@@ -336,7 +329,7 @@ namespace POLTest1.Tests.Settings_API
 
             init();
             var host = GetUrl("SettingsApi");
-            var url = host + "/Widget/";
+            var url = host + "Widget/";
             for (var i = 0; i < EntityInfoList.Count(); i++)
             {
                 EntityId = EntityInfoList[i].EntityId;

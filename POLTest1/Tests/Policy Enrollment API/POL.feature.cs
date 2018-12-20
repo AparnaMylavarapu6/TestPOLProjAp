@@ -70,23 +70,23 @@ namespace POLTest1.Tests.PolicyEnrollmentAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                         "propertyIdType",
                         "propertyID"});
-            table104.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "LeasingDesk",
                         "156"});
 #line 6
- testRunner.Given("I have provided the property information to post the  pol product opt-in", ((string)(null)), table104, "Given ");
+ testRunner.Given("I have provided the property information to post the  pol product opt-in", ((string)(null)), table105, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
                         "quoteid",
                         "productrateid"});
-            table105.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "2864963",
                         "183"});
 #line 9
- testRunner.And("I have provided the quoteid and the productrateid", ((string)(null)), table105, "And ");
+ testRunner.And("I have provided the quoteid and the productrateid", ((string)(null)), table106, "And ");
 #line 13
  testRunner.When("I send a Post request to fetch the certificate number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
@@ -106,36 +106,36 @@ this.ScenarioSetup(scenarioInfo);
 #line 18
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                         "userid",
                         "password"});
-            table106.AddRow(new string[] {
+            table107.AddRow(new string[] {
                         "webservice@realpage.com",
                         "hgC2HfBd"});
 #line 20
-testRunner.Given("I have provided the authentication information for POL policy activation", ((string)(null)), table106, "Given ");
+testRunner.Given("I have provided the authentication information for POL policy activation", ((string)(null)), table107, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                         "propertyIdType",
                         "propertyID"});
-            table107.AddRow(new string[] {
+            table108.AddRow(new string[] {
                         "LeasingDesk",
                         "156"});
 #line 24
-testRunner.And("I have provided the property information for POL policy activation", ((string)(null)), table107, "And ");
+testRunner.And("I have provided the property information for POL policy activation", ((string)(null)), table108, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table109 = new TechTalk.SpecFlow.Table(new string[] {
                         "quoteRequestSource",
                         "extLeaseID",
                         "extUnitID",
                         "extResidentID"});
-            table108.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "OLL Integration",
                         "234567",
                         "453256",
                         "1324556"});
 #line 28
-testRunner.And("I have provided the quote information for POL policy activation", ((string)(null)), table108, "And ");
+testRunner.And("I have provided the quote information for POL policy activation", ((string)(null)), table109, "And ");
 #line 32
 testRunner.When("I send a Post request for POL Policy Activation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 33

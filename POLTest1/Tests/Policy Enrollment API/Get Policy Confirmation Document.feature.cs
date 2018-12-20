@@ -70,12 +70,12 @@ namespace POLTest1.Tests.PolicyEnrollmentAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table81 = new TechTalk.SpecFlow.Table(new string[] {
                         "residentid"});
-            table80.AddRow(new string[] {
+            table81.AddRow(new string[] {
                         ""});
 #line 6
- testRunner.Given("I have provided the residentid to get policy confirmation document", ((string)(null)), table80, "Given ");
+ testRunner.Given("I have provided the residentid to get policy confirmation document", ((string)(null)), table81, "Given ");
 #line 9
  testRunner.When("I send a Post  request to fetch the confirmation document", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10

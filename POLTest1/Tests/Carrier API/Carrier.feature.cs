@@ -70,7 +70,7 @@ namespace POLTest1.Tests.CarrierAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
                         "propertyID",
                         "propertyName",
                         "propertyAddress",
@@ -78,7 +78,7 @@ this.ScenarioSetup(scenarioInfo);
                         "quoteSource",
                         "zipcode",
                         "quoteEffdDate"});
-            table28.AddRow(new string[] {
+            table29.AddRow(new string[] {
                         "156",
                         "Meadow Bay LeasingDesk",
                         "5555 South Paradise",
@@ -87,7 +87,7 @@ this.ScenarioSetup(scenarioInfo);
                         "0",
                         "2018-08-25T00:00:00"});
 #line 7
-testRunner.Given("I have entered the property details to post the rates", ((string)(null)), table28, "Given ");
+testRunner.Given("I have entered the property details to post the rates", ((string)(null)), table29, "Given ");
 #line 12
 testRunner.When("I send a valid POST Request with the input", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
@@ -105,7 +105,7 @@ testRunner.Then("A valid product package information should be generated", ((str
 #line 17
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
                         "propertyID",
                         "propertyName",
                         "propertyAddress",
@@ -113,7 +113,7 @@ this.ScenarioSetup(scenarioInfo);
                         "quoteSource",
                         "zipcode",
                         "quoteEffdDate"});
-            table29.AddRow(new string[] {
+            table30.AddRow(new string[] {
                         "156",
                         "Meadow Bay LeasingDesk",
                         "5555 South Paradise",
@@ -122,7 +122,7 @@ this.ScenarioSetup(scenarioInfo);
                         "0",
                         "2018-08-25T00:00:00"});
 #line 19
-testRunner.Given("I have entered the property details to post POL Rates", ((string)(null)), table29, "Given ");
+testRunner.Given("I have entered the property details to post POL Rates", ((string)(null)), table30, "Given ");
 #line 24
 testRunner.When("I send a valid POST Request with the POL input data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 25

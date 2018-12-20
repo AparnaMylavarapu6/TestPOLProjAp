@@ -70,49 +70,6 @@ namespace POLTest1.Tests.PolicyAPI
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table76 = new TechTalk.SpecFlow.Table(new string[] {
-                        "policyid",
-                        "policystatus",
-                        "policynumber",
-                        "policysource",
-                        "effectivedate",
-                        "expirydate",
-                        "createdbyid",
-                        "modifiedby",
-                        "liabilitylimit",
-                        "carrierid",
-                        "isCorporate"});
-            table76.AddRow(new string[] {
-                        "0",
-                        "0",
-                        "1125dddThirdparty",
-                        "1",
-                        "2018-07-02T11:47:05.8374812-05:00",
-                        "2019-07-02T11:47:05.8374844-05:00",
-                        "-3",
-                        "-3",
-                        "100000",
-                        "65",
-                        "false"});
-#line 7
- testRunner.Given("I have entered the ThirdParty policy information", ((string)(null)), table76, "Given ");
-#line 11
- testRunner.When("I send a Post request with the policy information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
- testRunner.Then("A valid successful response should be generated with the policy information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [TechTalk.SpecRun.ScenarioAttribute("Put ThirdParty Policy", new string[] {
-                "needtorunfordev"}, SourceLine=16)]
-        public virtual void PutThirdPartyPolicy()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put ThirdParty Policy", new string[] {
-                        "needtorunfordev"});
-#line 17
-this.ScenarioSetup(scenarioInfo);
-#line hidden
             TechTalk.SpecFlow.Table table77 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid",
                         "policystatus",
@@ -137,8 +94,51 @@ this.ScenarioSetup(scenarioInfo);
                         "100000",
                         "65",
                         "false"});
+#line 7
+ testRunner.Given("I have entered the ThirdParty policy information", ((string)(null)), table77, "Given ");
+#line 11
+ testRunner.When("I send a Post request with the policy information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
+ testRunner.Then("A valid successful response should be generated with the policy information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Put ThirdParty Policy", new string[] {
+                "needtorunfordev"}, SourceLine=16)]
+        public virtual void PutThirdPartyPolicy()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put ThirdParty Policy", new string[] {
+                        "needtorunfordev"});
+#line 17
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
+                        "policyid",
+                        "policystatus",
+                        "policynumber",
+                        "policysource",
+                        "effectivedate",
+                        "expirydate",
+                        "createdbyid",
+                        "modifiedby",
+                        "liabilitylimit",
+                        "carrierid",
+                        "isCorporate"});
+            table78.AddRow(new string[] {
+                        "0",
+                        "0",
+                        "1125dddThirdparty",
+                        "1",
+                        "2018-07-02T11:47:05.8374812-05:00",
+                        "2019-07-02T11:47:05.8374844-05:00",
+                        "-3",
+                        "-3",
+                        "100000",
+                        "65",
+                        "false"});
 #line 18
- testRunner.Given("I have entered the new or updated ThirdParty policy information", ((string)(null)), table77, "Given ");
+ testRunner.Given("I have entered the new or updated ThirdParty policy information", ((string)(null)), table78, "Given ");
 #line 22
  testRunner.When("I send a Put request with the policy information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 23
@@ -157,12 +157,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 28
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table79 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table78.AddRow(new string[] {
+            table79.AddRow(new string[] {
                         "6130579"});
 #line 30
-testRunner.Given("I have provided the policy id as an input to fetch the policy information", ((string)(null)), table78, "Given ");
+testRunner.Given("I have provided the policy id as an input to fetch the policy information", ((string)(null)), table79, "Given ");
 #line 34
 testRunner.When("I send a Get request with the policy id as input", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 35
@@ -181,17 +181,17 @@ testRunner.Then("A successful response should be generated with the third party 
 #line 41
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table79 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid",
                         "thirdpartypolicyid"});
-            table79.AddRow(new string[] {
+            table80.AddRow(new string[] {
                         "1234",
                         ""});
-            table79.AddRow(new string[] {
+            table80.AddRow(new string[] {
                         "2345",
                         "3456"});
 #line 43
-testRunner.Given("I have provided the policy id as an input to delete the policy information", ((string)(null)), table79, "Given ");
+testRunner.Given("I have provided the policy id as an input to delete the policy information", ((string)(null)), table80, "Given ");
 #line 48
 testRunner.When("I send a Delete request with the policy id as input", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 49

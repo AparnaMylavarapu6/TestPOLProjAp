@@ -45,7 +45,7 @@ namespace RentersInsuranceApiTests
                 if (properties["verbose"] != null) verbose = Convert.ToBoolean(properties["verbose"]);
 
                 //Set hostUrl
-                if (hostUrl == null) hostUrl = properties["hostUrl"].Trim();
+             //   if (hostUrl == null) hostUrl = properties["hostUrl"].Trim();
                 if (token == null) token = properties["token"].Trim();
 
 
@@ -204,8 +204,8 @@ namespace RentersInsuranceApiTests
             table.Rows.Add("QuoteApi", "sat", "https://ri-quoteapi-sat.realpage.com/v2/");
             table.Rows.Add("QuoteApi", "uat", "https://ri-quoteapi-uat.realpage.com/v2/");
             table.Rows.Add("ResidentApi", "dev", "https://ri-residentapi-dev.realpage.com/v2/");
-            table.Rows.Add("ResidentApi", "sat", "https://ri-residentapi-sat.realpage.com/v2/");
-            table.Rows.Add("ResidentApi", "uat", "https://ri-residentapi-uat.realpage.com/v2/");
+            table.Rows.Add("ResidentApi", "sat", "http://ri-residentapi-sat.realpage.com/v2/");
+            table.Rows.Add("ResidentApi", "uat", "http://ri-residentapi-uat.realpage.com/v2/");
             table.Rows.Add("PolicyApi", "dev", "https://ri-policyapi-dev.realpage.com/");
             table.Rows.Add("PolicyApi", "sat", "https://ri-policyapi-sat.realpage.com/");
             table.Rows.Add("PolicyApi", "uat", "https://ri-policyapi-uat.realpage.com/");
@@ -216,8 +216,8 @@ namespace RentersInsuranceApiTests
             table.Rows.Add("CarrierApi", "sat", "https://ri-carrierintegrationapi-sat.realpage.com/");
             table.Rows.Add("CarrierApi", "uat", "https://ri-carrierintegrationapi-uat.realpage.com/");
             table.Rows.Add("SettingsApi", "dev", "https://ri-settingsapi-dev.realpage.com/");
-            table.Rows.Add("SettingsApi", "sat", "https://ri-settingsapi-sat.realpage.com/");
-            table.Rows.Add("SettingsApi", "uat", "https://ri-settingsapi-uat.realpage.com/");
+            table.Rows.Add("SettingsApi", "sat", "http://ri-settingsapi-sat.realpage.com/");
+            table.Rows.Add("SettingsApi", "uat", "http://ri-settingsapi-uat.realpage.com/");
             table.Rows.Add("NotificationsApi", "dev", "https://ri-notificationapi-dev.realpage.com/");
             table.Rows.Add("NotificationsApi", "sat", "https://ri-notificationapi-sat.realpage.com/");
             table.Rows.Add("NotificationsApi", "uat", "https://ri-notificationapi-uat.realpage.com/");

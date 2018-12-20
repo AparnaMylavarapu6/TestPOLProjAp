@@ -70,35 +70,35 @@ namespace POLTest1.Tests.PMSIntegrationAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
                         "entityType",
                         "entityId"});
-            table30.AddRow(new string[] {
+            table31.AddRow(new string[] {
                         "onesite",
                         "609248"});
 #line 6
- testRunner.Given("I have entered the property type request to fetch the lease details", ((string)(null)), table30, "Given ");
+ testRunner.Given("I have entered the property type request to fetch the lease details", ((string)(null)), table31, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                         "extResidentId",
                         "extUnitId",
                         "leaseEffectiveDate"});
-            table31.AddRow(new string[] {
+            table32.AddRow(new string[] {
                         "170",
                         "10",
                         "2018-01-10"});
 #line 9
- testRunner.And("I have entered the Resident and Unit ID\'s to get the lease details", ((string)(null)), table31, "And ");
+ testRunner.And("I have entered the Resident and Unit ID\'s to get the lease details", ((string)(null)), table32, "And ");
 #line 12
  testRunner.When("I send a Post request to the PMS System to fetch the lease details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                         "leaseId"});
-            table32.AddRow(new string[] {
+            table33.AddRow(new string[] {
                         ""});
 #line 13
  testRunner.Then("A valid success response should be genrated and the lease details should be retur" +
-                    "ned", ((string)(null)), table32, "Then ");
+                    "ned", ((string)(null)), table33, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

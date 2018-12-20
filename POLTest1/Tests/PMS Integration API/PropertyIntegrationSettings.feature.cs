@@ -72,20 +72,20 @@ namespace POLTest1.Tests.PMSIntegrationAPI
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                         "PropertyType",
                         "PropertyId"});
-            table44.AddRow(new string[] {
+            table45.AddRow(new string[] {
                         "OneSite",
                         "120"});
-            table44.AddRow(new string[] {
+            table45.AddRow(new string[] {
                         "Yardi",
                         "120"});
-            table44.AddRow(new string[] {
+            table45.AddRow(new string[] {
                         "MRI",
                         "120"});
 #line 9
-testRunner.Given("I have entered a valid property type and propertyid", ((string)(null)), table44, "Given ");
+testRunner.Given("I have entered a valid property type and propertyid", ((string)(null)), table45, "Given ");
 #line 16
 testRunner.When("I send a valid GET request to fetch the Integration information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 17

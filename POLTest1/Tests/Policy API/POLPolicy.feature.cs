@@ -70,17 +70,17 @@ namespace POLTest1.Tests.PolicyAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
                         "entityid",
                         "entitytype"});
-            table68.AddRow(new string[] {
+            table69.AddRow(new string[] {
                         "1234",
                         "Property"});
-            table68.AddRow(new string[] {
+            table69.AddRow(new string[] {
                         "1234",
                         "Company"});
 #line 6
- testRunner.Given("I have entered the entity type and the entity id", ((string)(null)), table68, "Given ");
+ testRunner.Given("I have entered the entity type and the entity id", ((string)(null)), table69, "Given ");
 #line 12
  testRunner.When("I send a Get request to fetch the POL policies", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
@@ -98,14 +98,14 @@ this.ScenarioSetup(scenarioInfo);
 #line 17
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
                         "certificatenumber",
                         "residentid"});
-            table69.AddRow(new string[] {
+            table70.AddRow(new string[] {
                         "1234",
                         "12343"});
 #line 19
-testRunner.Given("I have entered the resident id and the certificate number of the pol policy", ((string)(null)), table69, "Given ");
+testRunner.Given("I have entered the resident id and the certificate number of the pol policy", ((string)(null)), table70, "Given ");
 #line 23
 testRunner.When("I send a Get request with the certificate number and the residentid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 24
@@ -124,14 +124,14 @@ testRunner.Then("The policy, property, lease and ledger information tied up to t
 #line 29
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
                         "certificatenumber",
                         "residentid"});
-            table70.AddRow(new string[] {
+            table71.AddRow(new string[] {
                         "1234",
                         "1234"});
 #line 31
-testRunner.Given("I have provided the resident id and certificate number for policy details", ((string)(null)), table70, "Given ");
+testRunner.Given("I have provided the resident id and certificate number for policy details", ((string)(null)), table71, "Given ");
 #line 35
 testRunner.When("I send a Get request to the get policy details method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 36
@@ -150,14 +150,14 @@ testRunner.Then("A successful response should be generated from the method with 
 #line 41
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
                         "certificatenumber",
                         "locationid"});
-            table71.AddRow(new string[] {
+            table72.AddRow(new string[] {
                         "1234",
                         "1234"});
 #line 43
-testRunner.Given("I have provided the location id and the certificate number fo policy details", ((string)(null)), table71, "Given ");
+testRunner.Given("I have provided the location id and the certificate number fo policy details", ((string)(null)), table72, "Given ");
 #line 47
 testRunner.When("I send a Get request with the location id and certification number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 48
@@ -176,12 +176,12 @@ testRunner.Then("A successful response should be generated from the method with 
 #line 53
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
                         "ledgerinfoid"});
-            table72.AddRow(new string[] {
+            table73.AddRow(new string[] {
                         "1234"});
 #line 55
-testRunner.Given("I have entered the ledger info id to fetch the ledger details", ((string)(null)), table72, "Given ");
+testRunner.Given("I have entered the ledger info id to fetch the ledger details", ((string)(null)), table73, "Given ");
 #line 59
 testRunner.When("I send a Get request to fetch the monthly ledger details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 60
@@ -199,12 +199,12 @@ testRunner.Then("A successful response should be generated with the monthly ledg
 #line 65
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
                         "ledgerinfoid"});
-            table73.AddRow(new string[] {
+            table74.AddRow(new string[] {
                         "1234"});
 #line 66
-testRunner.Given("I have provided the ledger info id to fetch the ledger information", ((string)(null)), table73, "Given ");
+testRunner.Given("I have provided the ledger info id to fetch the ledger information", ((string)(null)), table74, "Given ");
 #line 70
 testRunner.When("I send a Get request to fetch the ledger information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 71
@@ -222,12 +222,12 @@ testRunner.Then("A successful response should be generated with the ledger infor
 #line 76
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table75 = new TechTalk.SpecFlow.Table(new string[] {
                         "certificatenumber"});
-            table74.AddRow(new string[] {
+            table75.AddRow(new string[] {
                         "1234"});
 #line 78
-testRunner.Given("I have entered the certificate number to fetch the resident details", ((string)(null)), table74, "Given ");
+testRunner.Given("I have entered the certificate number to fetch the resident details", ((string)(null)), table75, "Given ");
 #line 82
 testRunner.When("I send a Get request to fetch the resident details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 83
@@ -245,15 +245,15 @@ testRunner.Then("A successful response should be generated with the resident det
 #line 89
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table75 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table76 = new TechTalk.SpecFlow.Table(new string[] {
                         "certificatenumber",
                         "locationid"});
-            table75.AddRow(new string[] {
+            table76.AddRow(new string[] {
                         "1234",
                         "1234"});
 #line 91
 testRunner.Given("I have entered the certificate number and location id to fetch the product covera" +
-                    "ge details", ((string)(null)), table75, "Given ");
+                    "ge details", ((string)(null)), table76, "Given ");
 #line 95
 testRunner.When("I send a Get request to fetch the product coverage details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 96

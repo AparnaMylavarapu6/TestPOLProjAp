@@ -70,23 +70,23 @@ namespace POLTest1.Tests.PMSIntegrationAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
                         "leaseId",
                         "isOptIn",
                         "entityType",
                         "entityId"});
-            table33.AddRow(new string[] {
+            table34.AddRow(new string[] {
                         "101",
                         "1",
                         "onesite",
                         "609248"});
-            table33.AddRow(new string[] {
+            table34.AddRow(new string[] {
                         "102",
                         "0",
                         "onesite",
                         "609248"});
 #line 7
-testRunner.Given("I have entered the lease and property integration details", ((string)(null)), table33, "Given ");
+testRunner.Given("I have entered the lease and property integration details", ((string)(null)), table34, "Given ");
 #line 12
 testRunner.When("I send a valid POST request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
@@ -104,18 +104,18 @@ testRunner.Then("A valid response should be generated.", ((string)(null)), ((Tec
 #line 16
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
                         "leaseId",
                         "isOptIn",
                         "entityType",
                         "entityId"});
-            table34.AddRow(new string[] {
+            table35.AddRow(new string[] {
                         "101",
                         "1",
                         "onesite",
                         "609248"});
 #line 18
-testRunner.Given("I have entered the lease and property integration details for PUT Request", ((string)(null)), table34, "Given ");
+testRunner.Given("I have entered the lease and property integration details for PUT Request", ((string)(null)), table35, "Given ");
 #line 22
 testRunner.When("I send a valid PUT request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 23

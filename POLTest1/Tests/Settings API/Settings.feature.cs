@@ -70,12 +70,12 @@ namespace POLTest1.Tests.SettingsAPI
 #line 4
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table126 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table143 = new TechTalk.SpecFlow.Table(new string[] {
                         "SettingsID"});
-            table126.AddRow(new string[] {
-                        "289"});
+            table143.AddRow(new string[] {
+                        "1520"});
 #line 6
- testRunner.Given("Provided with the valid SettingsID.", ((string)(null)), table126, "Given ");
+ testRunner.Given("Provided with the valid SettingsID.", ((string)(null)), table143, "Given ");
 #line 9
  testRunner.When("I send a GET request to fetch settings details.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
@@ -93,12 +93,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table127 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table144 = new TechTalk.SpecFlow.Table(new string[] {
                         "SettingsID"});
-            table127.AddRow(new string[] {
-                        "2"});
+            table144.AddRow(new string[] {
+                        "1631"});
 #line 15
- testRunner.Given("Provided with the valid SettingsID to be deleted.", ((string)(null)), table127, "Given ");
+ testRunner.Given("Provided with the valid SettingsID to be deleted.", ((string)(null)), table144, "Given ");
 #line 18
  testRunner.When("I send a DELETE request to Delete settings details.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 19
@@ -116,7 +116,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 22
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table128 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table145 = new TechTalk.SpecFlow.Table(new string[] {
                         "EntityId",
                         "EntityType",
                         "EntityText",
@@ -126,29 +126,29 @@ this.ScenarioSetup(scenarioInfo);
                         "zip",
                         "UserId",
                         "ModifiedById"});
-            table128.AddRow(new string[] {
-                        "601244",
+            table145.AddRow(new string[] {
+                        "605499",
                         "1",
-                        "BlueStone Lofts",
-                        "101 Summit St",
-                        "Duluth",
-                        "CA",
-                        "55803",
-                        "-1",
+                        "Southern Elms",
+                        "4519 E 31st  Street",
+                        "Tulsa",
+                        "OK",
+                        "74135",
+                        "0",
                         "0"});
 #line 23
- testRunner.Given("I have provided Entity Settings details.", ((string)(null)), table128, "Given ");
+ testRunner.Given("I have provided Entity Settings details.", ((string)(null)), table145, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table129 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table146 = new TechTalk.SpecFlow.Table(new string[] {
                         "settingsID",
                         "settingType",
                         "settingValue"});
-            table129.AddRow(new string[] {
-                        "283",
+            table146.AddRow(new string[] {
+                        "260",
                         "HO4",
                         "true"});
 #line 26
- testRunner.And("Provided with the new SettingsInfo details.", ((string)(null)), table129, "And ");
+ testRunner.And("Provided with the new SettingsInfo details.", ((string)(null)), table146, "And ");
 #line 29
  testRunner.When("I send a POST request to add new settings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 30
@@ -166,7 +166,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 33
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table130 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table147 = new TechTalk.SpecFlow.Table(new string[] {
                         "EntityId",
                         "EntityType",
                         "EntityText",
@@ -176,7 +176,7 @@ this.ScenarioSetup(scenarioInfo);
                         "zip",
                         "UserId",
                         "ModifiedById"});
-            table130.AddRow(new string[] {
+            table147.AddRow(new string[] {
                         "601234",
                         "1",
                         "BlueStone Lofts",
@@ -187,18 +187,18 @@ this.ScenarioSetup(scenarioInfo);
                         "-1",
                         "0"});
 #line 34
- testRunner.Given("I have provided Entity Settings details for PUT Request.", ((string)(null)), table130, "Given ");
+ testRunner.Given("I have provided Entity Settings details for PUT Request.", ((string)(null)), table147, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table131 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table148 = new TechTalk.SpecFlow.Table(new string[] {
                         "settingsID",
                         "settingType",
                         "settingValue"});
-            table131.AddRow(new string[] {
+            table148.AddRow(new string[] {
                         "291",
                         "POL",
-                        "false"});
+                        "true"});
 #line 37
- testRunner.And("Provided with the new SettingsInfo details for PUT.", ((string)(null)), table131, "And ");
+ testRunner.And("Provided with the new SettingsInfo details for PUT.", ((string)(null)), table148, "And ");
 #line 40
  testRunner.When("I send a PUT request to update new settings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 41
@@ -216,17 +216,14 @@ this.ScenarioSetup(scenarioInfo);
 #line 44
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table132 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table149 = new TechTalk.SpecFlow.Table(new string[] {
                         "EntityID",
                         "EntityType"});
-            table132.AddRow(new string[] {
-                        "609249",
+            table149.AddRow(new string[] {
+                        "9277",
                         "Property"});
-            table132.AddRow(new string[] {
-                        "611489",
-                        "Company"});
 #line 46
- testRunner.Given("Provided with the valid EntityID and EntityType.", ((string)(null)), table132, "Given ");
+ testRunner.Given("Provided with the valid EntityID and EntityType.", ((string)(null)), table149, "Given ");
 #line 50
  testRunner.When("I send a GET request to fetch settings details EntityID and EntityType.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 51
@@ -244,20 +241,20 @@ this.ScenarioSetup(scenarioInfo);
 #line 54
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table133 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table150 = new TechTalk.SpecFlow.Table(new string[] {
                         "PropertyID",
                         "PropertyType"});
-            table133.AddRow(new string[] {
-                        "611489",
+            table150.AddRow(new string[] {
+                        "609769",
                         "LeasingDesk"});
-            table133.AddRow(new string[] {
+            table150.AddRow(new string[] {
                         "2913444",
                         "Onesite"});
-            table133.AddRow(new string[] {
+            table150.AddRow(new string[] {
                         "6717648",
                         "Yardi"});
 #line 56
- testRunner.Given("Provided with the valid PropertyID and PropertyType.", ((string)(null)), table133, "Given ");
+ testRunner.Given("Provided with the valid PropertyID and PropertyType.", ((string)(null)), table150, "Given ");
 #line 61
  testRunner.When("I send a GET request to fetch settings details PropertyID and PropertyType.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 62

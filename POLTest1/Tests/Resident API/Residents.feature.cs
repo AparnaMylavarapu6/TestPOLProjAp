@@ -61,102 +61,198 @@ namespace POLTest1.Tests.ResidentAPI
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Get Resident Information", SourceLine=5)]
-        [TechTalk.SpecRun.IgnoreAttribute()]
-        public virtual void GetResidentInformation()
+        [TechTalk.SpecRun.ScenarioAttribute("Get Resident details", new string[] {
+                "mytag"}, SourceLine=4)]
+        public virtual void GetResidentDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Resident Information", new string[] {
-                        "ignore"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get Resident details", new string[] {
+                        "mytag"});
+#line 5
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table133 = new TechTalk.SpecFlow.Table(new string[] {
+                        "ResidentID"});
+            table133.AddRow(new string[] {
+                        "8522"});
 #line 6
-this.ScenarioSetup(scenarioInfo);
-#line hidden
-            TechTalk.SpecFlow.Table table122 = new TechTalk.SpecFlow.Table(new string[] {
-                        "residentid"});
-            table122.AddRow(new string[] {
-                        ""});
-#line 8
-testRunner.Given("I have a valid residentid to fetch the resident information", ((string)(null)), table122, "Given ");
-#line 11
-testRunner.When("I send a valid Get Request to fetch the resident information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
-testRunner.Then("A valid resident information response should be generated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("I have resident details", ((string)(null)), table133, "Given ");
+#line 9
+ testRunner.When("I pass the residentid for a get request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+ testRunner.Then("the resident details should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Delete Resident Information", SourceLine=15)]
-        [TechTalk.SpecRun.IgnoreAttribute()]
-        public virtual void DeleteResidentInformation()
+        [TechTalk.SpecRun.ScenarioAttribute("Delete Resident details", new string[] {
+                "mytag"}, SourceLine=12)]
+        public virtual void DeleteResidentDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Resident Information", new string[] {
-                        "ignore"});
-#line 16
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Resident details", new string[] {
+                        "mytag"});
+#line 13
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table123 = new TechTalk.SpecFlow.Table(new string[] {
-                        "residentid"});
-            table123.AddRow(new string[] {
-                        ""});
+            TechTalk.SpecFlow.Table table134 = new TechTalk.SpecFlow.Table(new string[] {
+                        "ResidentID"});
+            table134.AddRow(new string[] {
+                        "8521"});
+#line 14
+ testRunner.Given("I have to Delete resident details", ((string)(null)), table134, "Given ");
+#line 17
+ testRunner.When("I pass the residnet id for a delete request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 18
-testRunner.Given("I have a valid residentid to delete the resident information", ((string)(null)), table123, "Given ");
-#line 21
-testRunner.When("I send a valid Delete Request to delete the resident information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 22
-testRunner.Then("A valid response for the delete operation should be generated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("the Delete resident details should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Post Resident Information", SourceLine=26)]
-        [TechTalk.SpecRun.IgnoreAttribute()]
-        public virtual void PostResidentInformation()
+        [TechTalk.SpecRun.ScenarioAttribute("Post Resident details", new string[] {
+                "mytag"}, SourceLine=20)]
+        public virtual void PostResidentDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Post Resident Information", new string[] {
-                        "ignore"});
-#line 27
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Post Resident details", new string[] {
+                        "mytag"});
+#line 21
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table124 = new TechTalk.SpecFlow.Table(new string[] {
-                        "residentType",
-                        "fristName",
-                        "middleName",
-                        "lastName",
-                        "email",
-                        "mobileNumber",
-                        "extResidentID",
-                        "dateOfBirth",
-                        "mailingAddressValidated"});
-            table124.AddRow(new string[] {
-                        "LeasingDesk",
-                        "Chris",
-                        "S",
-                        "Thomas",
-                        "a@a.com",
-                        "9877666555555",
-                        "t123456",
-                        "03/03/1980",
-                        "true"});
-#line 29
-testRunner.Given("I have the resident details for Post operation", ((string)(null)), table124, "Given ");
+            TechTalk.SpecFlow.Table table135 = new TechTalk.SpecFlow.Table(new string[] {
+                        "resType",
+                        "locationID",
+                        "leaseStartDate",
+                        "leaseEndDate",
+                        "createdDate"});
+            table135.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2018-09-14T11:29:12.862Z",
+                        "2018-09-14T11:29:12.862Z",
+                        "2018-09-14T11:29:12.862Z"});
+#line 22
+ testRunner.Given("I have to Post new resident details", ((string)(null)), table135, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table125 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table136 = new TechTalk.SpecFlow.Table(new string[] {
+                        "firstName",
+                        "middleName",
+                        "lastName"});
+            table136.AddRow(new string[] {
+                        "113",
+                        "true",
+                        "1234"});
+#line 25
+ testRunner.And("I have provided Residents Information.", ((string)(null)), table136, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table137 = new TechTalk.SpecFlow.Table(new string[] {
+                        "externalResID",
+                        "residentID",
+                        "isPrimaryResident",
+                        "dateofBirth",
+                        "email",
+                        "mobileNumber"});
+            table137.AddRow(new string[] {
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""});
+#line 28
+ testRunner.And("Provided additional Resident details          |", ((string)(null)), table137, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table138 = new TechTalk.SpecFlow.Table(new string[] {
                         "addressLine1",
                         "addressLine2",
                         "city",
                         "state",
-                        "postalCode"});
-            table125.AddRow(new string[] {
+                        "zipCode"});
+            table138.AddRow(new string[] {
                         "",
                         "",
                         "",
                         "",
                         ""});
+#line 31
+ testRunner.And("I have provided Mailing Address Information.", ((string)(null)), table138, "And ");
 #line 34
-testRunner.And("I have the mailing address details", ((string)(null)), table125, "And ");
+ testRunner.When("I pass the resident id for a post request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 35
+ testRunner.Then("the post resident details should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Put Resident details", new string[] {
+                "mytag"}, SourceLine=37)]
+        public virtual void PutResidentDetails()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Put Resident details", new string[] {
+                        "mytag"});
+#line 38
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table139 = new TechTalk.SpecFlow.Table(new string[] {
+                        "resType",
+                        "locationID",
+                        "leaseStartDate",
+                        "leaseEndDate",
+                        "createdDate"});
+            table139.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2018-09-14T11:29:12.862Z",
+                        "2018-09-14T11:29:12.862Z",
+                        "2018-09-14T11:29:12.862Z"});
 #line 39
-testRunner.When("I Send a Post Request to the system", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 40
-testRunner.Then("The success response should be generated for the post operation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("I have to update resident details", ((string)(null)), table139, "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table140 = new TechTalk.SpecFlow.Table(new string[] {
+                        "firstName",
+                        "middleName",
+                        "lastName"});
+            table140.AddRow(new string[] {
+                        "113",
+                        "true",
+                        "1234"});
+#line 42
+ testRunner.And("I have provided Residents Information.", ((string)(null)), table140, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table141 = new TechTalk.SpecFlow.Table(new string[] {
+                        "externalResID",
+                        "residentID",
+                        "isPrimaryResident",
+                        "dateofBirth",
+                        "email",
+                        "mobileNumber"});
+            table141.AddRow(new string[] {
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""});
+#line 45
+ testRunner.And("Provided additional Resident details          |", ((string)(null)), table141, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table142 = new TechTalk.SpecFlow.Table(new string[] {
+                        "addressLine1",
+                        "addressLine2",
+                        "city",
+                        "state",
+                        "zipCode"});
+            table142.AddRow(new string[] {
+                        "",
+                        "",
+                        "",
+                        "",
+                        ""});
+#line 48
+ testRunner.And("I have provided Mailing Address Information.", ((string)(null)), table142, "And ");
+#line 51
+ testRunner.When("I send a Put request to insert the Occupancy details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 52
+ testRunner.When("I pass the resident id for a put request", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 53
+ testRunner.Then("the put resident details should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

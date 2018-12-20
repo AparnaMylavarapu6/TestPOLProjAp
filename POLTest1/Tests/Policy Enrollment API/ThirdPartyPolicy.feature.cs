@@ -70,14 +70,14 @@ namespace POLTest1.Tests.PolicyEnrollmentAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table119 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table120 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyNumber",
                         "effectiveDate",
                         "expiryDate",
                         "carrierName",
                         "liabilityAmount",
                         "docData"});
-            table119.AddRow(new string[] {
+            table120.AddRow(new string[] {
                         "",
                         "",
                         "",
@@ -85,7 +85,7 @@ this.ScenarioSetup(scenarioInfo);
                         "",
                         ""});
 #line 6
- testRunner.Given("I have entered the policy information", ((string)(null)), table119, "Given ");
+ testRunner.Given("I have entered the policy information", ((string)(null)), table120, "Given ");
 #line 9
  testRunner.When("I send a Post Request to post the policy doc data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10

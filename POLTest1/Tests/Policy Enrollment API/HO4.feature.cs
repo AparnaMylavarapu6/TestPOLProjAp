@@ -70,53 +70,53 @@ namespace POLTest1.Tests.PolicyEnrollmentAPI
 #line 5
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table81 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table82 = new TechTalk.SpecFlow.Table(new string[] {
                         "userId",
                         "password"});
-            table81.AddRow(new string[] {
+            table82.AddRow(new string[] {
                         "webservice@realpage.com",
                         "hgC2HfBd"});
 #line 6
  testRunner.Given("I have entered the authentication information to fetch the Quote Product Package " +
-                    "Details", ((string)(null)), table81, "Given ");
+                    "Details", ((string)(null)), table82, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table82 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table83 = new TechTalk.SpecFlow.Table(new string[] {
                         "propertyIdType",
                         "propertyID"});
-            table82.AddRow(new string[] {
+            table83.AddRow(new string[] {
                         "LeasingDesk",
                         "156"});
 #line 9
  testRunner.And("I have entered the property information to fetch the Quote Product Package Detail" +
-                    "s", ((string)(null)), table82, "And ");
+                    "s", ((string)(null)), table83, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table83 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table84 = new TechTalk.SpecFlow.Table(new string[] {
                         "UnitIDType",
                         "UnitID"});
-            table83.AddRow(new string[] {
+            table84.AddRow(new string[] {
                         "Leasingdesk",
                         ""});
 #line 12
- testRunner.And("I have entered the unit information to fetch the Quote Product Package Details", ((string)(null)), table83, "And ");
+ testRunner.And("I have entered the unit information to fetch the Quote Product Package Details", ((string)(null)), table84, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table84 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table85 = new TechTalk.SpecFlow.Table(new string[] {
                         "firstName",
                         "middleName",
                         "lastName"});
-            table84.AddRow(new string[] {
+            table85.AddRow(new string[] {
                         "Insurance",
                         "",
                         "PolicyEnroll"});
 #line 15
- testRunner.And("I have entered the resident name to fetch the Quote Product Package Details", ((string)(null)), table84, "And ");
+ testRunner.And("I have entered the resident name to fetch the Quote Product Package Details", ((string)(null)), table85, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table85 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table86 = new TechTalk.SpecFlow.Table(new string[] {
                         "externalResID",
                         "isPrimaryResident",
                         "dateofBirth",
                         "email",
                         "mobileNumber"});
-            table85.AddRow(new string[] {
+            table86.AddRow(new string[] {
                         "",
                         "true",
                         "1998-01-01",
@@ -124,20 +124,20 @@ this.ScenarioSetup(scenarioInfo);
                         "0000000000"});
 #line 18
  testRunner.And("I have entered the resident information to fetch the Quote Product Package Detail" +
-                    "s", ((string)(null)), table85, "And ");
+                    "s", ((string)(null)), table86, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table86 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table87 = new TechTalk.SpecFlow.Table(new string[] {
                         "coverageDate",
                         "quoteRequestSource",
                         "leaseID",
                         "isRenewal"});
-            table86.AddRow(new string[] {
+            table87.AddRow(new string[] {
                         "2018-04-27",
                         "OLL Integration",
                         "234567",
                         "false"});
 #line 21
- testRunner.And("I have entered the lease information to fetch the Quote Product Package Details", ((string)(null)), table86, "And ");
+ testRunner.And("I have entered the lease information to fetch the Quote Product Package Details", ((string)(null)), table87, "And ");
 #line 24
  testRunner.When("I Send a Post request to fetch the Quote Product Package Details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 25
@@ -155,16 +155,16 @@ this.ScenarioSetup(scenarioInfo);
 #line 28
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table87 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table88 = new TechTalk.SpecFlow.Table(new string[] {
                         "propertyIdType",
                         "propertyID"});
-            table87.AddRow(new string[] {
+            table88.AddRow(new string[] {
                         "LeasingDesk",
                         "156"});
 #line 30
- testRunner.Given("I have entered the property information to send decline notices", ((string)(null)), table87, "Given ");
+ testRunner.Given("I have entered the property information to send decline notices", ((string)(null)), table88, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table88 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
                         "quoteId",
                         "firstName",
                         "lastName",
@@ -176,7 +176,7 @@ this.ScenarioSetup(scenarioInfo);
                         "zipcode",
                         "notifyByEmail",
                         "notifyByPost"});
-            table88.AddRow(new string[] {
+            table89.AddRow(new string[] {
                         "",
                         "",
                         "",
@@ -189,21 +189,21 @@ this.ScenarioSetup(scenarioInfo);
                         "",
                         ""});
 #line 33
- testRunner.And("I have entered the quote and decline notice information", ((string)(null)), table88, "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
-                        "declineReasonId"});
-            table89.AddRow(new string[] {
-                        ""});
-#line 37
- testRunner.And("I have entered the decline reason id", ((string)(null)), table89, "And ");
+ testRunner.And("I have entered the quote and decline notice information", ((string)(null)), table89, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
-                        "declineReason"});
+                        "declineReasonId"});
             table90.AddRow(new string[] {
                         ""});
+#line 37
+ testRunner.And("I have entered the decline reason id", ((string)(null)), table90, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table91 = new TechTalk.SpecFlow.Table(new string[] {
+                        "declineReason"});
+            table91.AddRow(new string[] {
+                        ""});
 #line 42
- testRunner.And("I have entered the decline reason", ((string)(null)), table90, "And ");
+ testRunner.And("I have entered the decline reason", ((string)(null)), table91, "And ");
 #line 46
  testRunner.When("I send a post request to send the decline reasons", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 47
@@ -221,48 +221,48 @@ this.ScenarioSetup(scenarioInfo);
 #line 50
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table91 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table92 = new TechTalk.SpecFlow.Table(new string[] {
                         "userId",
                         "password"});
-            table91.AddRow(new string[] {
+            table92.AddRow(new string[] {
                         "webservice@realpage.com",
                         "hgC2HfBd"});
 #line 51
- testRunner.Given("I have entered the authentication information for quote submission", ((string)(null)), table91, "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table92 = new TechTalk.SpecFlow.Table(new string[] {
-                        "pOAID"});
-            table92.AddRow(new string[] {
-                        ""});
-#line 55
- testRunner.And("I have entered the Deductible Information", ((string)(null)), table92, "And ");
+ testRunner.Given("I have entered the authentication information for quote submission", ((string)(null)), table92, "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table93 = new TechTalk.SpecFlow.Table(new string[] {
                         "pOAID"});
             table93.AddRow(new string[] {
                         ""});
-#line 59
- testRunner.And("I have entered the Endorsement Information", ((string)(null)), table93, "And ");
+#line 55
+ testRunner.And("I have entered the Deductible Information", ((string)(null)), table93, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table94 = new TechTalk.SpecFlow.Table(new string[] {
+                        "pOAID"});
+            table94.AddRow(new string[] {
+                        ""});
+#line 59
+ testRunner.And("I have entered the Endorsement Information", ((string)(null)), table94, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table95 = new TechTalk.SpecFlow.Table(new string[] {
                         "firstName",
                         "middleName",
                         "lastName"});
-            table94.AddRow(new string[] {
+            table95.AddRow(new string[] {
                         "test",
                         "",
                         "Test2"});
 #line 63
- testRunner.And("I have entered the resident name for quote submission", ((string)(null)), table94, "And ");
+ testRunner.And("I have entered the resident name for quote submission", ((string)(null)), table95, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table95 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table96 = new TechTalk.SpecFlow.Table(new string[] {
                         "residentID",
                         "externalResID",
                         "mobileNumber",
                         "email",
                         "isPrimaryResident",
                         "dateOfBirth"});
-            table95.AddRow(new string[] {
+            table96.AddRow(new string[] {
                         "13444",
                         "34566",
                         "999999999",
@@ -270,31 +270,31 @@ this.ScenarioSetup(scenarioInfo);
                         "true",
                         "04/04/2000"});
 #line 67
- testRunner.And("I have entered the other resident information for quote submission", ((string)(null)), table95, "And ");
+ testRunner.And("I have entered the other resident information for quote submission", ((string)(null)), table96, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table96 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table97 = new TechTalk.SpecFlow.Table(new string[] {
                         "addressLine1",
                         "addressLine2",
                         "city",
                         "state",
                         "zipCode"});
-            table96.AddRow(new string[] {
+            table97.AddRow(new string[] {
                         "123 Test Drive",
                         "",
                         "Test City",
                         "CA",
                         ""});
 #line 71
- testRunner.And("I have entered the Mailing Address Information for Quote Submission", ((string)(null)), table96, "And ");
+ testRunner.And("I have entered the Mailing Address Information for Quote Submission", ((string)(null)), table97, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table97 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table98 = new TechTalk.SpecFlow.Table(new string[] {
                         "quoteID",
                         "productGroupID",
                         "locationID",
                         "isMailingAddressAsUnitAddress",
                         "underwritingQuestionsAcceptance",
                         "quoteRequestSource"});
-            table97.AddRow(new string[] {
+            table98.AddRow(new string[] {
                         "1234",
                         "1",
                         "12345",
@@ -302,7 +302,7 @@ this.ScenarioSetup(scenarioInfo);
                         "true",
                         "OLL"});
 #line 75
- testRunner.And("I have entered the Quote Information", ((string)(null)), table97, "And ");
+ testRunner.And("I have entered the Quote Information", ((string)(null)), table98, "And ");
 #line 79
  testRunner.When("I send a Post request for quote submission", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 80
@@ -320,23 +320,23 @@ this.ScenarioSetup(scenarioInfo);
 #line 83
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table98 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
                         "userId",
                         "password"});
-            table98.AddRow(new string[] {
+            table99.AddRow(new string[] {
                         "webservice@realpage.com",
                         "hgC2HfBd"});
 #line 84
- testRunner.Given("I have entered the authentication information for payment submission", ((string)(null)), table98, "Given ");
+ testRunner.Given("I have entered the authentication information for payment submission", ((string)(null)), table99, "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table100 = new TechTalk.SpecFlow.Table(new string[] {
                         "nameOnCard",
                         "cardType",
                         "cardNumber",
                         "cVV",
                         "cCExpDateMonth",
                         "cCExpDateFourDigitYear"});
-            table99.AddRow(new string[] {
+            table100.AddRow(new string[] {
                         "",
                         "",
                         "",
@@ -344,33 +344,33 @@ this.ScenarioSetup(scenarioInfo);
                         "",
                         ""});
 #line 88
- testRunner.And("I have entered the credit card information for payment submission", ((string)(null)), table99, "And ");
+ testRunner.And("I have entered the credit card information for payment submission", ((string)(null)), table100, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table100 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
                         "name",
                         "accountName",
                         "routingNumber",
                         "accountNumber",
                         "checkNumber"});
-            table100.AddRow(new string[] {
+            table101.AddRow(new string[] {
                         "",
                         "",
                         "",
                         "",
                         ""});
 #line 92
- testRunner.And("I have entered the ACH information for payment submission", ((string)(null)), table100, "And ");
+ testRunner.And("I have entered the ACH information for payment submission", ((string)(null)), table101, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table102 = new TechTalk.SpecFlow.Table(new string[] {
                         "paymentTypesInfo",
                         "paymentFrequency"});
-            table101.AddRow(new string[] {
+            table102.AddRow(new string[] {
                         "CreditCard",
                         "Monthly"});
 #line 96
- testRunner.And("I have entered the payment type information for payment submission", ((string)(null)), table101, "And ");
+ testRunner.And("I have entered the payment type information for payment submission", ((string)(null)), table102, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table102 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
                         "quoteID",
                         "annualPremium",
                         "modalFeePremium",
@@ -381,7 +381,7 @@ this.ScenarioSetup(scenarioInfo);
                         "termsandConditionsAcceptance",
                         "isPaperLess",
                         "isSameDayDisclaimer"});
-            table102.AddRow(new string[] {
+            table103.AddRow(new string[] {
                         "",
                         "",
                         "",
@@ -393,7 +393,7 @@ this.ScenarioSetup(scenarioInfo);
                         "",
                         ""});
 #line 100
- testRunner.And("I have entered the quote and premium information", ((string)(null)), table102, "And ");
+ testRunner.And("I have entered the quote and premium information", ((string)(null)), table103, "And ");
 #line 104
  testRunner.When("I send a Post request for payment submission", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 105
@@ -411,12 +411,12 @@ this.ScenarioSetup(scenarioInfo);
 #line 109
 this.ScenarioSetup(scenarioInfo);
 #line hidden
-            TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
                         "policyid"});
-            table103.AddRow(new string[] {
+            table104.AddRow(new string[] {
                         "12345"});
 #line 111
-testRunner.Given("I have provided the policy id to fetch the confirmation document", ((string)(null)), table103, "Given ");
+testRunner.Given("I have provided the policy id to fetch the confirmation document", ((string)(null)), table104, "Given ");
 #line 115
 testRunner.When("I send a Get Request to fetch the confirmation document", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 116
